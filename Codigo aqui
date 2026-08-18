@@ -1,0 +1,22 @@
+alturas = []
+soma = 0
+Masculino = 0
+Feminino = 0
+
+for i in range(15):
+  genero = input("Informe o seu genero: ")
+  altura = float(input("Informe a sua altura: "))
+
+  alturas.append(altura)
+
+  if genero == "Masculino":
+    soma += altura
+    Masculino += 1
+
+  else:
+    Feminino += 1
+
+print(f"Maior altura {max(alturas)}")
+print(f"Menor altura {min(alturas)}")
+print(f"Media dia de altura masculina { soma / Masculino}")
+print(f"Quantidade de mulheres {Feminino}")
